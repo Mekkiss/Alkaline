@@ -54,66 +54,62 @@
 \newcounter{money}
 \newcounter{casterlevel}
 
-\newcommand{\charname}{NAME}
-\newcommand{\charrace}{RACE}
-\newcommand{\charclass}{CLASS LVL}
-\newcommand{\charalignment}{F}
-\newcommand{\charsex}{Male}
+\newcommand{\charname}{Alkaline, Daughter of Kasaba}
+\newcommand{\charrace}{Human}
+\newcommand{\charclass}{Ranger (Yokai Hunter) 4}
+\newcommand{\charalignment}{CN}
+\newcommand{\charsex}{Female}
 \newcommand{\charsize}{Medium}
 \setcounter{sizemod}{0}
-\newcommand{\chartype}{Humanoid (SUBTYPE)}
+\newcommand{\chartype}{Humanoid (Human)}
 \newcommand{\charheight}{10'2``}
-\newcommand{\charweight}{15.42kg/38lb}
+\newcommand{\charweight}{65kg}
 \newcommand{\charhair}{Black}
 \newcommand{\chareyes}{Red}
-\setcounter{age}{5}
+\setcounter{age}{26}
 
 \setcounter{xp}{0}
-\setcounter{ecl}{1}
+\setcounter{ecl}{4}
 
-\setcounter{totalhp}{21}
-\setcounter{currenthp}{21}
-\newcommand{\speed}{15', 3sq (medium load)}
+\setcounter{totalhp}{23}
+\setcounter{currenthp}{23}
+\newcommand{\speed}{30', 6sq (light load)}
 
-\setcounter{str}{5} % -4
-\setcounter{dex}{12} % 2
-\setcounter{con}{14} % 2
-\setcounter{int}{14} % 5
-\setcounter{wis}{8} % -2
-\setcounter{cha}{20} % 17
+                     % Base  Human  4th
+\setcounter{str}{14} % 14
+\setcounter{dex}{18} % 15     +2    +1
+\setcounter{con}{8} % 12
+\setcounter{int}{10} % 10
+\setcounter{wis}{13} % 13
+\setcounter{cha}{12}  % 8
 
 
 \setcounter{acnatural}{0}
-\setcounter{acarmour}{2}
+\setcounter{acarmour}{0}
 \setcounter{acmaxdex}{6} %maximum dexterity modifier armour allows. Use a high number for none
 
-\setcounter{basefort}{0}
-\setcounter{baseref}{0}
-\setcounter{basewill}{2}
+\setcounter{basefort}{4}
+\setcounter{baseref}{4}
+\setcounter{basewill}{1}
 \setcounter{resistancesave}{0}
-\setcounter{bab}{1}
+\setcounter{bab}{4}
 \setcounter{spellresistance}{0}
 
 \setcounter{cmdmisc}{\value{acdeflect}}
+\setcounter{initmisc}{2}
 
 \newcommand{\feats}{
- Combat Reflexes\\
+ Track\textsuperscript{b}, Endurance\textsuperscript{b}
+ Point Blank Shot (Human), Rapid Shot (1st), Precise Shot (2nd, Bonus), Weapon Focus (Longbow) (3rd)
 }
 
 \newcommand{\traits}{
-Extremely Fashionable \\
-Patient Optimist (+2 to diplomacy to change attitude of unfriendly or hostile, may retry once) \\
+Reactionary, Anatomist
 }
 \newcommand{\specialabilities}{
-Low-light vision \\
-1/day dancing lights \\
-1/day ghost sound \\
-1/day prestigitiation \\
-1/day speak with animals \\
-1/day reroll natural 1 on 1d20 \\
-8/day Summon Monster I \\
-Fused Eidolon
-Fused Link
+Favored Yokai (see notes)
+Favoured Terrain (Water/Coastline)
+Hunter's Bond (animal)
 }
 
 \newcommand{\conditionalmods}{
@@ -131,20 +127,29 @@ Common, Kelish, Gnome, Varision \\
 \newcommand{\conditionalspellmods}{
 }
 
-\setcounter{casterlevel}{2}
+\setcounter{casterlevel}{1}
 
 \newcommand{\spellsknown}{
-\begin{compactenum}
-\item [1st] \spell{Rejuvinate Eidolon [lesser]}, \spell{Grease}, \spell{Mage Armor}
-\item [0]   \spell{Guidance}, \spell{Detect Magic}, \spell{Mage Hand}, \spell{Message}, \spell{Acid Splash}
-\end{compactenum}
+all
 }
 
 \newcommand{\domains}{
 None
 }
 \newcommand{\notes}{
-0/4 Prestige
+At 1st level, a yokai hunter gains a +2 bonus on weapon attacks and damage rolls against one of the following creature 
+types (and subtypes, if applicable), which are considered yokai for the purposes of this archetype: aberration, dragon, 
+fey, magical beast, outsider (native), and undead (incorporeal). (A GM may choose to alter this list for the purposes of 
+her campaign.)
+
+At 5th level and every five levels thereafter, a yokai hunter may select another favored yokai from this list, gaining
+a +2 bonus on weapon attacks and damage rolls against that yokai.
+
+In addition, whenever a yokai hunter sees a favored yokai that is disguised or has not made its otherworldly essence 
+known, he gains an automatic check to identify the creature as such. To make this check, a yokai hunter rolls 1d20 and
+adds his yokai hunter level and Charisma modifier (DC 10 + 1/2 the yokai's Hit Dice + the yokai's Cha modifier). A successful
+check means that the yokai hunter recognizes the creature's ties to the spiritual world. Regardless of whether the 
+check is successful, a yokai hunter gains the bonus on weapon attacks and damage rolls against favored yokai.
 }
 \newcommand{\people}{
 }
